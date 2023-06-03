@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0 3rem;
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0 1rem;
+  }
+}

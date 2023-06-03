@@ -1,0 +1,9 @@
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cat {
+  width: 100vw;
+  display: block;
+}

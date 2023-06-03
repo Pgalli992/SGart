@@ -1,0 +1,31 @@
+.main__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 4.5rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+  background-color: $color-grey-dark;
+  color: $color-white;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: $color-grey-dark-1;
+  transform: scale(1.1);
+  box-shadow: 0 1.8rem 3.2rem rgba(0, 0, 0, 0.2);
+}

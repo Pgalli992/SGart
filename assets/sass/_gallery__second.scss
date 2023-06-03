@@ -1,0 +1,44 @@
+.opere__second {
+  margin: 0 auto;
+}
+
+.gallery__second {
+  max-width: 98%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(10, 30vh);
+  gap: 0.8rem;
+  margin: 0 auto;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  position: relative;
+  background-color: #fff;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 0.5rem;
+  }
+
+  &--item {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+
+    &:last-child {
+      @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 1.2rem;
+        paddin-top: 6rem;
+      }
+    }
+    & img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+}
