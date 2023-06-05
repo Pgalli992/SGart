@@ -33,12 +33,22 @@
     transition: all 0.2s;
     border-radius: 9px;
     box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.3);
+
+    @media only screen and (max-width: $bp-medium) {
+      top: 0.5rem;
+      height: 2.2rem;
+      width: 2.2rem;
+    }
+
     &:hover {
       color: $color-black;
       box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.2);
+      transform: scale(1.04);
+      transition: all 0.2s;
     }
     &:active {
       box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.5);
+      transform: scale(1);
     }
   }
 }
