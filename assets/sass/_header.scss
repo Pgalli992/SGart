@@ -22,19 +22,21 @@
     height: 4rem;
   }
   &__btn--back {
-    &:link,
-    &:visited {
-      color: $color-grey-dark;
-      position: absolute;
-      top: 1.5rem;
-      left: 1.5rem;
-      font-size: 3rem;
-      text-decoration: none;
-      display: inline-block;
-      transition: all 0.2s;
-    }
+    color: $color-grey-dark;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    padding: 0.4rem 0.4rem;
+    font-size: 3rem;
+    transition: all 0.2s;
+    border-radius: 9px;
+    box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.3);
     &:hover {
       color: $color-black;
+      box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.2);
+    }
+    &:active {
+      box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.5);
     }
   }
 }

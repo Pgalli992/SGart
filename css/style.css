@@ -39,17 +39,21 @@ body {
     .header {
       padding-bottom: 1.5rem;
       height: 4rem; } }
-  .header__btn--back:link, .header__btn--back:visited {
+  .header__btn--back {
     color: #443a40;
     position: absolute;
     top: 1.5rem;
     left: 1.5rem;
+    padding: 0.4rem 0.4rem;
     font-size: 3rem;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.2s; }
-  .header__btn--back:hover {
-    color: #000; }
+    transition: all 0.2s;
+    border-radius: 9px;
+    box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.3); }
+    .header__btn--back:hover {
+      color: #000;
+      box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.2); }
+    .header__btn--back:active {
+      box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.5); }
 
 .logo {
   font-family: "Delicious Handrawn", cursive;
