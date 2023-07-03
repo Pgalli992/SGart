@@ -1,0 +1,39 @@
+.reviews {
+  width: 65%;
+  margin: 10rem auto;
+  padding: 5rem 10rem 5rem 10rem;
+  background-color: $color-white;
+  border-radius: 25px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  gap: 10rem;
+  display: flex;
+  & img {
+    height: 30rem;
+    transform: scale(1.5);
+    border-radius: 25px;
+  }
+
+  &--2 {
+    padding: 4.5rem 10rem 4.5rem 10rem;
+  }
+}
+
+.testimonial {
+  &_text {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: $color-grey-dark;
+    margin-bottom: 2rem;
+    justify-content: center;
+    &--2 {
+      font-size: 1.8rem;
+    }
+  }
+
+  &_author {
+    font-size: 1rem;
+    color: $color-grey-dark;
+  }
+}

@@ -1,6 +1,6 @@
 // Sticky navigation
 
-const sectionOpereEl = document.querySelector(".gallery__item--5");
+const sectionOpereEl = document.querySelector(".gallery__item--1");
 
 const obs = new IntersectionObserver(
   function (entries) {
@@ -8,11 +8,11 @@ const obs = new IntersectionObserver(
     console.log(ent);
 
     if (!ent.isIntersecting) {
-      document.body.classList.remove("sticky");
+      document.body.classList.add("sticky");
     }
 
     if (ent.isIntersecting) {
-      document.body.classList.add("sticky");
+      document.body.classList.remove("sticky");
     }
   },
   {
