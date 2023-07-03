@@ -10,7 +10,6 @@
   grid-template-rows: repeat(3, min-content) repeat(2, min-content);
   gap: 0.8rem;
   margin: 0 auto;
-  padding-top: 8rem;
   padding-bottom: 2rem;
   position: relative;
   background-color: #fff;
@@ -41,4 +40,8 @@
       object-fit: fill;
     }
   }
+}
+
+.sticky .opere {
+  padding-top: 6.8rem;
 }
