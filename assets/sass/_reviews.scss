@@ -12,8 +12,9 @@
     flex-direction: column;
     gap: 3rem;
     width: 100%;
-    padding: 0.7rem 1.2rem 1rem 1.2rem;
-    margin: 2rem 0 3.5rem 0;
+    padding: 0.7rem 2rem 1.2em 2rem;
+    margin: 8.5rem 0 5.5rem 0;
+    text-align: center;
   }
   & img {
     height: 30rem;
@@ -26,7 +27,7 @@
       width: 11rem;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 0.5rem;
+      margin: -3rem 0 0.5rem 0;
     }
   }
 
@@ -34,7 +35,7 @@
     padding: 3rem 1rem 3rem 6rem;
     @media only screen and (max-width: $bp-medium) {
       flex-direction: column-reverse;
-      padding: 1rem 1.2rem;
+      padding: 1rem 2rem;
       margin-bottom: 2.5rem;
     }
   }
@@ -60,6 +61,7 @@
       margin-right: 5rem;
       @media only screen and (max-width: $bp-medium) {
         font-size: 1.5rem;
+        margin-right: 0;
       }
     }
   }

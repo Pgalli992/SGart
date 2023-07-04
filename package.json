@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass assets/sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass assets/sass/main.scss css/style.css -w",
+    "prefix:css": "postcss --use autoprefixer"
   },
   "author": "Paolo Galli",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^8.0.0"
+    "autoprefixer": "^10.4.14",
+    "concat": "^1.0.3",
+    "node-sass": "^8.0.0",
+    "postcss-cli": "^10.1.0"
   }
 }
