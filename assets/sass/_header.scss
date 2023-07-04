@@ -15,7 +15,7 @@
       margin-top: 0.8rem;
     }
   }
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-small) {
     padding-bottom: 1.5rem;
     height: 4rem;
   }
@@ -34,7 +34,7 @@
     box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.3);
     z-index: 999;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-small) {
       top: 0.5rem;
       height: 2.2rem;
       width: 2.2rem;
@@ -78,7 +78,7 @@
   text-decoration: none;
   color: $color-grey-dark;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-small) {
     font-size: 3rem;
   }
 }
@@ -90,7 +90,7 @@
   list-style: none;
   justify-content: space-around;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-small) {
     font-size: 1rem;
     gap: 1.4rem;
   }

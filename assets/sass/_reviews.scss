@@ -7,13 +7,18 @@
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
-  gap: 10;
+  gap: 1rem;
+  @media only screen and (max-width: $bp-large) {
+    width: 80%;
+    padding: 1rem 5rem;
+  }
+
   @media only screen and (max-width: $bp-medium) {
     flex-direction: column;
     gap: 3rem;
     width: 100%;
     padding: 0.7rem 2rem 1.2em 2rem;
-    margin: 8.5rem 0 5.5rem 0;
+    margin-top: 8.5rem;
     text-align: center;
   }
   & img {
@@ -21,6 +26,10 @@
     transform: scale(1.3);
     border-radius: 25px;
     margin-right: 5rem;
+
+    @media only screen and (max-width: $bp-middle) {
+      height: 25rem;
+    }
 
     @media only screen and (max-width: $bp-medium) {
       height: 11rem;
@@ -33,10 +42,20 @@
 
   &--2 {
     padding: 3rem 1rem 3rem 6rem;
+    gap: 5rem;
+    @media only screen and (max-width: $bp-large) {
+      padding: 2rem 1rem 3rem 5rem;
+    }
+
+    @media only screen and (max-width: $bp-middle) {
+      padding: 2rem 1rem 1.8rem 5rem;
+    }
+
     @media only screen and (max-width: $bp-medium) {
       flex-direction: column-reverse;
-      padding: 1rem 2rem;
+      padding: 0.8rem 2rem;
       margin-bottom: 2.5rem;
+      gap: 3rem;
     }
   }
 }
@@ -50,6 +69,11 @@
     margin-bottom: 2rem;
     justify-content: center;
 
+    @media only screen and (max-width: $bp-middle) {
+      font-size: 1.6rem;
+      line-heigth: 1.2;
+    }
+
     @media only screen and (max-width: $bp-medium) {
       font-size: 1.5rem;
       line-height: 1.1;
@@ -57,11 +81,14 @@
     }
 
     &--2 {
-      font-size: 2rem;
-      margin-right: 5rem;
+      font-size: 1.8rem;
+
+      @media only screen and (max-width: $bp-middle) {
+        font-size: 1.4rem;
+        line-heigth: 1.2;
+      }
       @media only screen and (max-width: $bp-medium) {
-        font-size: 1.5rem;
-        margin-right: 0;
+        font-size: 1.3rem;
       }
     }
   }
