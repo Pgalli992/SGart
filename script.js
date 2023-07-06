@@ -23,3 +23,16 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionOpereEl);
+
+const images = document.querySelectorAll(".gallery_img");
+
+images.forEach((image) =>
+  image.addEventListener("click", function () {
+    const galleryImgSrc = this.getAttribute("src");
+    console.log(galleryImgSrc);
+    document.getElementById("popup_img").src = galleryImgSrc;
+    document.querySelector(".popup").style.visibility = "visible";
+    document.querySelector(".popup").style.opacity = 1;
+    document.querySelector(".popup__content").style.opacity = 1;
+  })
+);
