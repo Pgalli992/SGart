@@ -36,3 +36,10 @@ images.forEach((image) =>
     document.querySelector(".popup__content").style.opacity = 1;
   })
 );
+
+document.querySelector(".popup__close").addEventListener("click", function () {
+  document.getElementById("popup_img").src = "";
+  document.querySelector(".popup").style.visibility = "hidden";
+  document.querySelector(".popup").style.opacity = 0;
+  document.querySelector(".popup__content").style.opacity = 0;
+});
