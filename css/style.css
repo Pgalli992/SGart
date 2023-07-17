@@ -11,10 +11,15 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 0 3rem; }
+  padding: 0 3rem;
+  background-color: #fff; }
   @media only screen and (max-width: 35em) {
     body {
       padding: 0 1rem; } }
+
+.dark_mode {
+  background-color: #443a40;
+  color: #e9ecef; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -123,8 +128,7 @@ body {
   gap: 0.8rem;
   margin: 0 auto;
   padding-bottom: 2rem;
-  position: relative;
-  background-color: #fff; }
+  position: relative; }
   @media only screen and (max-width: 35em) {
     .gallery {
       display: flex;
@@ -244,8 +248,7 @@ body {
   margin: 0 auto;
   padding-top: 0rem;
   padding-bottom: 2rem;
-  position: relative;
-  background-color: #fff; }
+  position: relative; }
   @media only screen and (max-width: 35em) {
     .gallery__second {
       display: flex;
@@ -265,10 +268,7 @@ body {
       height: 100%;
       width: 100%;
       overflow: hidden;
-      object-fit: cover;
-      transition: all 0.2s; }
-      .gallery__second--item img:hover {
-        transform: scale(1.1); }
+      object-fit: cover; }
 
 .reviews {
   width: 65%;
