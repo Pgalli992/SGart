@@ -41,7 +41,8 @@
     }
   }
 
-  &--2 {
+  &--2,
+  &--3 {
     padding: 3rem 1rem 3rem 6rem;
     gap: 5rem;
     @media only screen and (max-width: $bp-large) {
@@ -63,8 +64,7 @@
 
 .testimonial {
   &_text {
-    font-size: 2.2rem;
-    font-weight: bold;
+    font-size: 1.8rem;
     line-height: 1.5;
     color: $color-grey-dark;
     margin-bottom: 2rem;
@@ -76,7 +76,7 @@
     }
 
     @media only screen and (max-width: $bp-medium) {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       line-height: 1.1;
       margin-bottom: 0.8rem;
     }
@@ -85,11 +85,10 @@
       font-size: 1.8rem;
 
       @media only screen and (max-width: $bp-middle) {
-        font-size: 1.4rem;
-        line-heigth: 1.2;
+        font-size: 1.6rem;
       }
       @media only screen and (max-width: $bp-medium) {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
     }
   }
@@ -97,5 +96,6 @@
   &_author {
     font-size: 1rem;
     color: $color-grey-dark;
+    text-align: end;
   }
 }

@@ -308,25 +308,24 @@ body {
         object-fit: cover;
         margin: -3rem 0 0.5rem 0;
         box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25); } }
-  .reviews--2 {
+  .reviews--2, .reviews--3 {
     padding: 3rem 1rem 3rem 6rem;
     gap: 5rem; }
     @media only screen and (max-width: 120em) {
-      .reviews--2 {
+      .reviews--2, .reviews--3 {
         padding: 2rem 1rem 3rem 5rem; } }
     @media only screen and (max-width: 80em) {
-      .reviews--2 {
+      .reviews--2, .reviews--3 {
         padding: 2rem 1rem 1.8rem 5rem; } }
     @media only screen and (max-width: 50em) {
-      .reviews--2 {
+      .reviews--2, .reviews--3 {
         flex-direction: column-reverse;
         padding: 0.8rem 2rem;
         margin-bottom: 2.5rem;
         gap: 3rem; } }
 
 .testimonial_text {
-  font-size: 2.2rem;
-  font-weight: bold;
+  font-size: 1.8rem;
   line-height: 1.5;
   color: #443a40;
   margin-bottom: 2rem;
@@ -337,19 +336,19 @@ body {
       line-heigth: 1.2; } }
   @media only screen and (max-width: 50em) {
     .testimonial_text {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       line-height: 1.1;
       margin-bottom: 0.8rem; } }
   .testimonial_text--2 {
     font-size: 1.8rem; }
     @media only screen and (max-width: 80em) {
       .testimonial_text--2 {
-        font-size: 1.4rem;
-        line-heigth: 1.2; } }
+        font-size: 1.6rem; } }
     @media only screen and (max-width: 50em) {
       .testimonial_text--2 {
-        font-size: 1.3rem; } }
+        font-size: 1.4rem; } }
 
 .testimonial_author {
   font-size: 1rem;
-  color: #443a40; }
+  color: #443a40;
+  text-align: end; }
