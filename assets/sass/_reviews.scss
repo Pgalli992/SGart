@@ -1,6 +1,6 @@
 .reviews {
   width: 65%;
-  margin: 10rem auto;
+  margin: 5rem auto;
   padding: 3rem 6rem;
   background-color: $color-white;
   border-radius: 25px;
@@ -42,7 +42,8 @@
   }
 
   &--2,
-  &--3 {
+  &--4,
+  &--6 {
     padding: 3rem 1rem 3rem 6rem;
     gap: 5rem;
     @media only screen and (max-width: $bp-large) {
@@ -79,17 +80,6 @@
       font-size: 1.4rem;
       line-height: 1.1;
       margin-bottom: 0.8rem;
-    }
-
-    &--2 {
-      font-size: 1.8rem;
-
-      @media only screen and (max-width: $bp-middle) {
-        font-size: 1.6rem;
-      }
-      @media only screen and (max-width: $bp-medium) {
-        font-size: 1.4rem;
-      }
     }
   }
 
