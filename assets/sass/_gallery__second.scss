@@ -7,11 +7,11 @@
   height: 100%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(10, 30vh);
+  grid-template-rows: repeat(9, 30vh);
   gap: 0.8rem;
   margin: 0 auto;
   padding-top: 0rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   position: relative;
 
   @media only screen and (max-width: $bp-small) {
