@@ -6,19 +6,25 @@ let pre = 0;
 let rev = 0;
 carousel(rev, pre);
 
-btnLeft.addEventListener("click", function () {
-  pre = rev;
-  rev -= 1;
-  console.log(rev);
-  console.log(pre);
-  carousel(rev, pre);
+// Call the addEventListener method
+["click", "touch"].forEach((event) => {
+  btnLeft.addEventListener(event, function () {
+    pre = rev;
+    rev -= 1;
+    console.log(rev);
+    console.log(pre);
+    carousel(rev, pre);
+  });
 });
-btnRight.addEventListener("click", function () {
-  pre = rev;
-  rev += 1;
-  console.log(rev);
-  console.log(pre);
-  carousel(rev, pre);
+
+["click", "touch"].forEach((event) => {
+  btnRight.addEventListener(event, function () {
+    pre = rev;
+    rev += 1;
+    console.log(rev);
+    console.log(pre);
+    carousel(rev, pre);
+  });
 });
 
 function carousel(review, preav) {
