@@ -1,0 +1,36 @@
+.carousel {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+
+  &__review {
+    height: 65rem;
+    @media only screen and (max-width: $bp-large) {
+      height: 55rem;
+    }
+    @media only screen and (max-width: $bp-middle) {
+      height: 50rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      height: 58rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+    }
+  }
+
+  &__article {
+    height: 85rem;
+    @media only screen and (max-width: $bp-large) {
+      height: 90rem;
+    }
+    @media only screen and (max-width: $bp-middle) {
+      height: 55rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      height: 90rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      height: 90rem;
+    }
+  }
+}
