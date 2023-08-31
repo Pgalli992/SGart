@@ -15,9 +15,15 @@
       margin-top: 0.3rem;
     }
   }
+  @media only screen and (max-width: $bp-middle) {
+    height: 9rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    height: 8rem;
+  }
   @media only screen and (max-width: $bp-small) {
     padding-bottom: 1.5rem;
-    height: 4rem;
+    height: 6rem;
   }
   &__btn--back {
     background-color: $color-white;
@@ -78,6 +84,13 @@
   text-decoration: none;
   color: $color-grey-dark;
 
+  @media only screen and (max-width: $bp-middle) {
+    font-size: 4.5rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 3.7rem;
+  }
+
   @media only screen and (max-width: $bp-small) {
     font-size: 3rem;
   }
@@ -90,9 +103,14 @@
   list-style: none;
   justify-content: space-around;
 
+  @media only screen and (max-width: $bp-middle) {
+    font-size: 1.6rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.3rem;
+  }
   @media only screen and (max-width: $bp-small) {
     font-size: 1rem;
-    gap: 1.4rem;
   }
 
   & li {
