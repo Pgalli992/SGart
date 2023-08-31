@@ -72,7 +72,7 @@
       & h1 {
         font-size: 3rem;
         @media only screen and (max-width: $bp-middle) {
-          font-size: 1.8rem;
+          font-size: 1rem;
         }
       }
     }
@@ -132,6 +132,16 @@
       font-size: 1.1rem;
       line-height: 1.1;
     }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 0.9rem;
+      line-height: 1;
+    }
+  }
+  .article__testimonial-text {
+    @media only screen and (max-width: $bp-small) {
+      font-size: 0.9rem;
+      line-height: 1;
+    }
   }
 
   &--author {
@@ -173,5 +183,15 @@
 }
 
 .logo__cds {
-  width: 10rem;
+  width: 60rem;
+
+  @media only screen and (max-width: $bp-middle) {
+    width: 37rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    width: 35rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    width: 16rem;
+  }
 }
