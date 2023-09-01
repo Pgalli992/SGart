@@ -72,6 +72,10 @@
   background-color: rgba(255, 255, 255, 0.883);
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+
+  @media only screen and (max-width: $bp-small) {
+    height: 5.8rem;
+  }
 }
 
 .sticky .logo {
@@ -97,19 +101,22 @@
 }
 .main-nav {
   display: flex;
-  gap: 6rem;
-  font-size: 1.8rem;
+  gap: 20rem;
+  font-size: 2.2rem;
   font-weight: 500;
   list-style: none;
   justify-content: space-around;
 
   @media only screen and (max-width: $bp-middle) {
+    gap: 15rem;
     font-size: 1.6rem;
   }
   @media only screen and (max-width: $bp-medium) {
+    gap: 10rem;
     font-size: 1.3rem;
   }
   @media only screen and (max-width: $bp-small) {
+    gap: 6rem;
     font-size: 1rem;
   }
 
