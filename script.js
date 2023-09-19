@@ -6,7 +6,7 @@ const sectionOpereEl = document.querySelector(".gallery__item--1");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent);
+    // console.log(ent);
 
     if (!ent.isIntersecting) {
       document.body.classList.add("sticky");
@@ -57,3 +57,13 @@ document.addEventListener("keydown", function (e) {
 });
 
 popup.addEventListener("click", closePopUp);
+
+// Page scrolling
+
+document.querySelector(".main-nav").addEventListener("click", function (e) {
+  e.preventDefault();
+  if (e.target.classList.contains("main-nav-link")) {
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
+});
