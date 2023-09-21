@@ -448,6 +448,7 @@ body {
 .review__testimonial--author,
 .article__testimonial--author {
   font-size: 1rem;
+  padding-top: 0.8rem;
   color: #443a40;
   text-align: end; }
   .review__testimonial--author-2,
