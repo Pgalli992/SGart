@@ -1,7 +1,11 @@
 .carousel {
-  display: flex;
+  max-width: 80%;
+  position: relative;
+  margin: 0 auto;
   align-items: start;
   justify-content: center;
+  overflow: hidden;
+  display: flex;
 
   &__review {
     height: 65rem;
@@ -19,18 +23,19 @@
   }
 
   &__article {
-    height: 85rem;
+    margin-bottom: 4rem;
+    height: 115rem;
     @media only screen and (max-width: $bp-large) {
-      height: 90rem;
+      height: 130rem;
     }
     @media only screen and (max-width: $bp-middle) {
-      height: 55rem;
+      height: 105rem;
     }
     @media only screen and (max-width: $bp-medium) {
-      height: 90rem;
+      height: 145rem;
     }
     @media only screen and (max-width: $bp-small) {
-      height: 90rem;
+      height: 130rem;
     }
   }
 }

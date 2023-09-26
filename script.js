@@ -2,27 +2,28 @@
 // Sticky navigation
 
 const sectionOpereEl = document.querySelector(".gallery__item--1");
+const nav = document.querySelector(".header__bottom-nav");
+const header = document.querySelector("header");
+const navHeight = header.getBoundingClientRect().height;
+// console.log(navHeight);
+const stickyNav = function (entries) {
+  const ent = entries[0];
+  // console.log(ent);
 
-const obs = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-    // console.log(ent);
-
-    if (!ent.isIntersecting) {
-      document.body.classList.add("sticky");
-    }
-
-    if (ent.isIntersecting) {
-      document.body.classList.remove("sticky");
-    }
-  },
-  {
-    // In the viewport
-    root: null,
-    threshold: 0,
-    rootMargin: "-80px",
+  if (!ent.isIntersecting) {
+    document.body.classList.add("sticky");
   }
-);
+
+  if (ent.isIntersecting) {
+    document.body.classList.remove("sticky");
+  }
+};
+const obs = new IntersectionObserver(stickyNav, {
+  // In the viewport
+  root: null,
+  threshold: 0,
+  // rootMargin: `-${navHeight}px`,
+});
 obs.observe(sectionOpereEl);
 
 const images = document.querySelectorAll(".gallery_img");
@@ -67,3 +68,20 @@ document.querySelector(".main-nav").addEventListener("click", function (e) {
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
 });
+
+// Navbar animation
+// const handleHover = function (e) {
+//   if (e.target.classList.contains("main-nav-link")) {
+//     const link = e.target;
+//     const siblings = link.closest(".header__bottom-nav").querySelectorAll("a");
+
+//     siblings.forEach((s) => {
+//       if (s !== link) s.style.opacity = this;
+//       console.log("done");
+//     });
+//     console.log("not done");
+//   }
+// };
+
+// nav.addEventListener("mouseover", handleHover.bind(0.5));
+// nav.addEventListener("mouseout", handleHover.bind(1));
