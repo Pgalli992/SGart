@@ -143,6 +143,7 @@
     @media only screen and (max-width: $bp-small) {
       font-size: 0.9rem;
       line-height: 1;
+      text-align: left;
     }
   }
 
@@ -151,6 +152,10 @@
     padding-top: 0.8rem;
     color: $color-grey-dark;
     text-align: end;
+
+    & span {
+      color: $color-grey-light-1;
+    }
 
     &-2 {
       display: flex;

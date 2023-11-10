@@ -486,7 +486,8 @@ body {
   .review__testimonial .article__testimonial-text,
   .article__testimonial .article__testimonial-text {
     font-size: 0.9rem;
-    line-height: 1; } }
+    line-height: 1;
+    text-align: left; } }
 
 .review__testimonial--author,
 .article__testimonial--author {
@@ -494,6 +495,9 @@ body {
   padding-top: 0.8rem;
   color: #443a40;
   text-align: end; }
+  .review__testimonial--author span,
+  .article__testimonial--author span {
+    color: #443a4052; }
   .review__testimonial--author-2,
   .article__testimonial--author-2 {
     display: flex;
