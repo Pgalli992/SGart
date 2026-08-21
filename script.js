@@ -69,6 +69,23 @@ document.querySelector(".main-nav").addEventListener("click", function (e) {
   }
 });
 
+// Video playlist sequenziale
+
+const videoPlaylist = [
+  "assets/video/Giancarlo.mov",
+  "assets/video/VID_20250731194029.mp4",
+  "assets/video/VID20250215153810.mp4",
+];
+
+const mainVideo = document.getElementById("main-video");
+let videoIndex = 0;
+
+mainVideo.addEventListener("ended", function () {
+  videoIndex = (videoIndex + 1) % videoPlaylist.length;
+  mainVideo.src = videoPlaylist[videoIndex];
+  mainVideo.play();
+});
+
 // Navbar animation
 // const handleHover = function (e) {
 //   if (e.target.classList.contains("main-nav-link")) {
